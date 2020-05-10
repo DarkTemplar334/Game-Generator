@@ -1,0 +1,769 @@
+{
+  "CLASSNAME": "gr.ict.ihu.Game.Snake",
+  "DATA": {
+    "result": {
+      "status": "CONTINUE",
+      "progressMessage": "Game Continues"
+    },
+    "numberOfSquares": 100,
+    "numberOfDice": 2,
+    "board": {
+      "activePlayer": {
+        "id": 0,
+        "currentPosition": 12,
+        "name": "Player1",
+        "turn": true
+      },
+      "playerList": [
+        {
+          "id": 0,
+          "currentPosition": 12,
+          "name": "Player1",
+          "turn": true
+        },
+        {
+          "id": 1,
+          "currentPosition": 9,
+          "name": "Player2",
+          "turn": true
+        }
+      ],
+      "squareList": [
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 0,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 1,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 2,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 3,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 4,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.MoveForwardSquare",
+          "DATA": {
+            "id": 5,
+            "hasPower": true,
+            "steps": 3,
+            "message": " stepped on powersquare(!) and moved 3 squares!"
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 6,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 7,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 8,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 9,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.MoveForwardSquare",
+          "DATA": {
+            "id": 10,
+            "hasPower": true,
+            "steps": 3,
+            "message": " stepped on powersquare(!) and moved 3 squares!"
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 11,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 12,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.MoveBackSquare",
+          "DATA": {
+            "id": 13,
+            "hasPower": true,
+            "steps": -3,
+            "message": " stepped on a trap and now moves 3 squares back!"
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 14,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 15,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 16,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 17,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 18,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 19,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.MoveForwardSquare",
+          "DATA": {
+            "id": 20,
+            "hasPower": true,
+            "steps": 3,
+            "message": " stepped on powersquare(!) and moved 3 squares!"
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 21,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 22,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.MoveForwardSquare",
+          "DATA": {
+            "id": 23,
+            "hasPower": true,
+            "steps": 3,
+            "message": " stepped on powersquare(!) and moved 3 squares!"
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 24,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 25,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 26,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 27,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 28,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 29,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.MoveBackSquare",
+          "DATA": {
+            "id": 30,
+            "hasPower": true,
+            "steps": -3,
+            "message": " stepped on a trap and now moves 3 squares back!"
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 31,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 32,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 33,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.MoveForwardSquare",
+          "DATA": {
+            "id": 34,
+            "hasPower": true,
+            "steps": 3,
+            "message": " stepped on powersquare(!) and moved 3 squares!"
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 35,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 36,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 37,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 38,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 39,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 40,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 41,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 42,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.MoveBackSquare",
+          "DATA": {
+            "id": 43,
+            "hasPower": true,
+            "steps": -3,
+            "message": " stepped on a trap and now moves 3 squares back!"
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 44,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 45,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 46,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 47,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 48,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 49,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.MoveForwardSquare",
+          "DATA": {
+            "id": 50,
+            "hasPower": true,
+            "steps": 3,
+            "message": " stepped on powersquare(!) and moved 3 squares!"
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 51,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 52,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 53,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 54,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.MoveBackSquare",
+          "DATA": {
+            "id": 55,
+            "hasPower": true,
+            "steps": -3,
+            "message": " stepped on a trap and now moves 3 squares back!"
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 56,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 57,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 58,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 59,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 60,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 61,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 62,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.MoveBackSquare",
+          "DATA": {
+            "id": 63,
+            "hasPower": true,
+            "steps": -3,
+            "message": " stepped on a trap and now moves 3 squares back!"
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 64,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 65,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 66,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 67,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 68,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 69,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 70,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 71,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 72,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.MoveForwardSquare",
+          "DATA": {
+            "id": 73,
+            "hasPower": true,
+            "steps": 3,
+            "message": " stepped on powersquare(!) and moved 3 squares!"
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 74,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 75,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 76,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.MoveForwardSquare",
+          "DATA": {
+            "id": 77,
+            "hasPower": true,
+            "steps": 3,
+            "message": " stepped on powersquare(!) and moved 3 squares!"
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 78,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 79,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 80,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 81,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 82,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.MoveBackSquare",
+          "DATA": {
+            "id": 83,
+            "hasPower": true,
+            "steps": -3,
+            "message": " stepped on a trap and now moves 3 squares back!"
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 84,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 85,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 86,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 87,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 88,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 89,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.MoveBackSquare",
+          "DATA": {
+            "id": 90,
+            "hasPower": true,
+            "steps": -3,
+            "message": " stepped on a trap and now moves 3 squares back!"
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 91,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 92,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 93,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.MoveBackSquare",
+          "DATA": {
+            "id": 94,
+            "hasPower": true,
+            "steps": -3,
+            "message": " stepped on a trap and now moves 3 squares back!"
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 95,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 96,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.MoveBackSquare",
+          "DATA": {
+            "id": 97,
+            "hasPower": true,
+            "steps": -3,
+            "message": " stepped on a trap and now moves 3 squares back!"
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 98,
+            "hasPower": false
+          }
+        },
+        {
+          "CLASSNAME": "gr.ict.ihu.Square.NormalSquare",
+          "DATA": {
+            "id": 99,
+            "hasPower": false
+          }
+        }
+      ]
+    }
+  }
+}

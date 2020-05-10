@@ -1,0 +1,32 @@
+{
+  "CLASSNAME": "gr.ict.ihu.Game.Snake",
+  "DATA": {
+    "result": {
+      "status": "START",
+      "progressMessage": "Game starting..."
+    },
+    "numberOfSquares": 100,
+    "numberOfDice": 2,
+    "moveForwardSquare": [
+      5,
+      10,
+      20,
+      23,
+      34,
+      50,
+      73,
+      77
+    ],
+    "moveBackWardSquare": [
+      13,
+      30,
+      43,
+      55,
+      63,
+      83,
+      90,
+      94,
+      97
+    ]
+  }
+}
